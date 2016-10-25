@@ -42,11 +42,19 @@ $(document).ready(function(){
   	});
 
 	// Time and Date
-  	$(function(){
-  		var realTime = moment().format('h:mm A');
-  		var realDate = moment().format('YYYY[-]MM[-]DD')
-  		$(".system-time").html(realTime);
-  		$(".system-date").html(realDate);
+  	$(function(){ 		
+
+  		// function for setting date and time
+  		var update = function(){
+  			var realTime = moment().format('h:mm A');
+  			var realDate = moment().format('YYYY[-]MM[-]DD');
+  			$(".system-time").html(realTime);
+  			$(".system-date").html(realDate);
+  		};
+
+  		update(); // Call the function
+  		setInterval(update, 1000); // Call it every second
+  		
   	});
 
 });

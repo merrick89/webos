@@ -20,7 +20,10 @@
 		<div class="app-container flexbox">
 			<div class="app-content" ng-controller="mainController">
 				<div class="window-container draggable resizable" ng-show="WindowExplorerState">
-					<div class="window-header">File Explorer</div>
+					<div class="window-header">
+						<div class="window-header-title"><img src="images/file-explorer.png"> File Explorer</div>
+						<button class="window-header-close" ng-click="toggleExplorer()"><i class="fa fa-times"></i></button>
+					</div>
 					<div class="window-content">Hi</div>
 				</div>
 				<taskbar></taskbar>

@@ -15,7 +15,7 @@
 		};
 	});
 
-	//Main Controller
+	//Main Controller for windows
 	app.controller('mainController', function($scope, windowService){
 		//File Explorer
         $scope.toggleExplorer = function(){
