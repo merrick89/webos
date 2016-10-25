@@ -19,6 +19,9 @@
 			<button class="system-icon system-application-icon" ng-click="toggleExplorer()" ng-class="{active: WindowExplorerState}">
 				<div><img src="images/file-explorer.png"></div>
 			</button>
+			<button class="system-icon system-application-icon" ng-click="toggleie()" ng-class="{active: WindowieState}">
+				<div><img src="images/ie.png"></div>
+			</button>
 		</div>
 		<div class="system-time-container">
 			<div class="text-right">

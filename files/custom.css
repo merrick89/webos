@@ -226,9 +226,9 @@ button.window-header-close:hover{
 }
 
 .window-content{
-	padding:5px;
 	background:white;
 	flex:1;
+	padding:5px;
 }
 
 .ng-invalid.ng-dirty{

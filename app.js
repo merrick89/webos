@@ -15,12 +15,30 @@
 		};
 	});
 
+	//Service for ie variables
+	app.service('windowieService', function(){
+		var WindowieState = false;
+		return{
+			setieState: function(){
+				WindowieState = !WindowieState;
+			},
+			getieState: function(){
+				return WindowieState;
+			}
+		};
+	});
+
 	//Main Controller for windows
-	app.controller('mainController', function($scope, windowService){
+	app.controller('mainController', function($scope, windowService, windowieService){
 		//File Explorer
         $scope.toggleExplorer = function(){
         	windowService.setExplorerState();
         	$scope.WindowExplorerState = windowService.getExplorerState();
+        };
+        //IE
+        $scope.toggleie = function(){
+        	windowieService.setieState();
+        	$scope.WindowieState = windowieService.getieState();
         };
 	})
 

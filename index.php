@@ -26,6 +26,14 @@
 					</div>
 					<div class="window-content">Hi</div>
 				</div>
+				<div class="window-container draggable resizable" ng-show="WindowieState">
+					<div class="window-header">
+						<div class="window-header-title"><img src="images/ie.png"> Internet Explorer</div>
+						<button class="window-header-close" ng-click="toggleie()"><i class="fa fa-times"></i></button>
+					</div>
+					<div class="window-content">
+					</div>
+				</div>
 				<taskbar></taskbar>
 			</div>			
 		</div>
