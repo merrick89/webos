@@ -1,0 +1,217 @@
+html{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;	
+	background:url("../images/background.jpg");
+	background-size:cover;
+}
+
+a{
+	outline:0;
+	text-decoration:none;	
+}
+
+button.system-icon{
+	color:white;
+	text-decoration:none;
+	height:50px;
+	width:50px;
+	text-align:center;
+	display:flex;
+	display:-webkit-flex;
+	align-items:center;
+	-webkit-align-items:center;
+	background:none;
+	border:none;
+	padding:0px;
+}
+
+button.system-icon:hover{
+	background:RGBA(0,0,0,0.5);
+}
+
+button.system-icon:active{
+	background:RGBA(0,0,0,0.5);
+}
+
+.system-icon img{
+	width:50%;
+}
+
+.system-application-icon.active{
+	border-bottom:2px solid white;
+	background:RGBA(0,0,0,0.5);
+}
+
+.system-application-icon.active img{
+	margin-bottom:-2px;
+}
+
+.start-button-graphic{
+	width:100%;
+	height:12px;
+}
+
+.start-button-line{
+	width:50%;
+	background:white;
+	height:2px;
+	margin:5px auto;
+}
+
+p{
+	margin:0px;
+	padding:0px;
+}
+
+h4{
+	margin:0px;
+	padding:0px;
+}
+
+ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	margin:0px;
+	padding:2px 0px;
+	-webkit-touch-callout: none; /* iOS Safari */
+  	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  	-khtml-user-select: none;    /* Konqueror */
+  	-moz-user-select: none;      /* Firefox */
+  	-ms-user-select: none;       /* Internet Explorer/Edge */
+  	user-select: none;  
+
+}
+
+.pgrey{
+	color:#989898;
+}
+
+.pblue{
+	color:#0090ff;
+}
+
+.pwhite{
+	color:white;
+}
+
+.flexbox{
+	display:flex;
+	display:-webkit-flex;
+}
+
+.flexbox-middle{
+	align-items:center;
+	-webkit-align-items:center;
+}
+
+.flexbox-wrap{
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.app-container{
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-image:url("../images/backgrounds/waves.jpg");
+	background-size:cover;
+	overflow:hidden;
+}
+
+.app-content{
+	opacity: 0;
+	width:100%;
+}
+
+.taskbar-container{	
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	z-index:999999;
+}
+
+.taskbar{
+	background:RGBA(0,0,0,0.4);
+	display:flex;
+	display:-webkit-flex;
+}
+
+.start-menu{
+	background:RGBA(0,0,0,0.4);
+	position:absolute;
+	bottom:50px;
+	width:300px;
+	color:white;
+	padding:10px 25px;
+}
+
+.window-container{
+	position:absolute;
+	top:5px;
+	left:5px;
+	width:500px;
+	box-shadow:0px 0px 2px RGBA(0,0,0,0.15);
+	display:flex;
+	flex-direction:column;	
+	border-radius:2px;
+	overflow:hidden;
+}
+
+.window-header{
+	padding:5px;
+	background:RGBA(255,255,255,0.7);
+}
+
+.window-content{
+	padding:5px;
+	background:white;
+	flex:1;
+}
+
+.ng-invalid.ng-dirty{
+	border-color:#FA787E;
+}
+
+.ng-valid.ng-dirty{
+	border-color:#78FA89;
+}
+
+.ng-enter{
+	-webkit-transition:1s;
+	transition:1s;
+	opacity:0;
+}
+
+.ng-enter-active{
+	opacity:1;
+}
+
+/* Mobile width */
+@media(max-width:460px){
+	.app-container{
+		position:initial;
+		box-shadow:none;
+	}
+}
+
+/* Small height */
+@media(max-height:500px){
+	.app-container{
+
+	}
+}
