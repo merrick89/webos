@@ -41,4 +41,12 @@ $(document).ready(function(){
     	});
   	});
 
+	// Time and Date
+  	$(function(){
+  		var realTime = moment().format('h:mm A');
+  		var realDate = moment().format('YYYY[-]MM[-]DD')
+  		$(".system-time").html(realTime);
+  		$(".system-date").html(realDate);
+  	});
+
 });

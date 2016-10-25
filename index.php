@@ -33,6 +33,7 @@
 		<script type="text/javascript" src="files/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="files/bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="files/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="files/moment.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 		<script type="text/javascript" src="files/typed.min.js"></script>
 		<script type="text/javascript" src="files/js.js"></script>
