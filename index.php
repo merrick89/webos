@@ -46,11 +46,14 @@
 				</div>
 				<div class="window-container draggable resizable" ng-show="WindowAboutState">
 					<div class="window-header">
-						<div class="window-header-title">About</div>
+						<div class="window-header-title"><img src="images/notepad.png"> About</div>
 						<button class="window-header-close" ng-click="toggleAbout()"><i class="fa fa-times"></i></button>
 					</div>
 					<div class="window-content">
-						asdfasdf
+						<div style="margin:5px;">
+							<blockquote>What would a computer look like if it could be controlled by anyone on the Internet?</blockquote>
+							<i>Disclaimer: This site is not affiliated with Microsoft in any way. The use of icons is used solely to imitate the popular OS.</i>
+						</div>
 					</div>
 				</div>
 				<taskbar></taskbar>
