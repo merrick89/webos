@@ -24,7 +24,16 @@
 						<div class="window-header-title"><img src="images/file-explorer.png"> File Explorer</div>
 						<button class="window-header-close" ng-click="toggleExplorer()"><i class="fa fa-times"></i></button>
 					</div>
-					<div class="window-content">Hi</div>
+					<div class="window-content flexbox">
+						<div class="explorer-left-nav">
+							<ul>
+								<li><button><img src="images/folder.png"> Images</button></li>
+								<li><button><img src="images/folder.png"> Videos</button></li>
+								<li><button><img src="images/folder.png"> Settings</button></li>
+							</ul>
+						</div>
+						<div class="explorer-content">asdf</div>
+					</div>
 				</div>
 				<div class="window-container draggable resizable" ng-show="WindowieState">
 					<div class="window-header">
@@ -32,6 +41,16 @@
 						<button class="window-header-close" ng-click="toggleie()"><i class="fa fa-times"></i></button>
 					</div>
 					<div class="window-content">
+						asdfasdf
+					</div>
+				</div>
+				<div class="window-container draggable resizable" ng-show="WindowAboutState">
+					<div class="window-header">
+						<div class="window-header-title">About</div>
+						<button class="window-header-close" ng-click="toggleAbout()"><i class="fa fa-times"></i></button>
+					</div>
+					<div class="window-content">
+						asdfasdf
 					</div>
 				</div>
 				<taskbar></taskbar>

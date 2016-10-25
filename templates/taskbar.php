@@ -1,11 +1,11 @@
 <section class="taskbar-container" ng-controller="navController">
 	<div class="start-menu" ng-show="state">
 		<ul>
-			<li>Test Application</li>
-			<li>Test Application</li>
-			<li>Test Application</li>
-			<li>Test Application</li>
-			<li>Test Application</li>
+			<li><button ng-click="toggleAbout()">About this site</button></li>
+			<li><button>Test Application</button></li>
+			<li><button>Test Application</button></li>
+			<li><button>Test Application</button></li>
+			<li><button>Test Application</button></li>
 		</ul>
 	</div>
 	<div class="taskbar">

@@ -28,8 +28,21 @@
 		};
 	});
 
+	//Service for about
+	app.service('windowAboutService', function(){
+		var WindowAboutState = false;
+		return{
+			setAboutState: function(){
+				WindowAboutState = !WindowAboutState;
+			},
+			getAboutState: function(){
+				return WindowAboutState;
+			}
+		};
+	});
+
 	//Main Controller for windows
-	app.controller('mainController', function($scope, windowService, windowieService){
+	app.controller('mainController', function($scope, windowService, windowieService, windowAboutService){
 		//File Explorer
         $scope.toggleExplorer = function(){
         	windowService.setExplorerState();
@@ -39,6 +52,11 @@
         $scope.toggleie = function(){
         	windowieService.setieState();
         	$scope.WindowieState = windowieService.getieState();
+        };
+        //About
+        $scope.toggleAbout = function(){
+        	windowAboutService.setAboutState();
+        	$scope.WindowAboutState = windowAboutService.getAboutState();
         };
 	})
 
