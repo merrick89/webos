@@ -200,6 +200,11 @@ button.system-icon:active{
 	background:RGBA(0,0,0,0.5);
 }
 
+.start-menu ul li button img{
+	max-height:20px;
+	margin-top:-3px;
+}
+
 .window-container{
 	position:absolute;
 	top:5px;

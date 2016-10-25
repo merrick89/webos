@@ -1,7 +1,7 @@
 <section class="taskbar-container" ng-controller="navController">
 	<div class="start-menu" ng-show="state">
 		<ul>
-			<li><button ng-click="toggleAbout()">About this site</button></li>
+			<li><button ng-click="toggleAbout()"><img src="images/notepad.png"> About this site</button></li>
 		</ul>
 	</div>
 	<div class="taskbar">
