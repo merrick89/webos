@@ -2,10 +2,6 @@
 	<div class="start-menu" ng-show="state">
 		<ul>
 			<li><button ng-click="toggleAbout()">About this site</button></li>
-			<li><button>Test Application</button></li>
-			<li><button>Test Application</button></li>
-			<li><button>Test Application</button></li>
-			<li><button>Test Application</button></li>
 		</ul>
 	</div>
 	<div class="taskbar">
